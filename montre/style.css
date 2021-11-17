@@ -1,0 +1,136 @@
+
+header {
+  display: grid;
+  color: white;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  font-family: 'Roboto', sans-serif;
+}
+
+img{
+  grid-row: 1;
+  grid-column: 1;
+  
+  width: 100%;
+  object-fit: cover;
+}
+.calque{
+  grid-row: 1;
+  grid-column: 1;
+  display: grid;
+  align-content: center;  
+  font-size: 10vw;
+  padding: 1em;
+  text-align: left;
+  /* display: contents; */
+
+}
+.calque b{
+  display: table;
+  font-size: 024%;
+ font-family:'Montserrat', sans-serif;
+ overflow: hidden;
+ text-align: center;
+ display: ruby-base;
+}
+.calque b::before,
+.calque b::after{
+  background-color: white;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  width: 17%;
+}
+h1{
+ 
+  text-transform: uppercase;
+  font-size: 66%;
+  /* margin: 0; */
+  height: 23%;
+  font-family: 'Bebas Neue';
+  line-height:10%;
+}
+p{
+  font-size: 15%;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 185%;
+  
+
+}
+.cadre{
+  width: 40%;
+  margin: auto;
+}
+
+
+.tiret{
+  background: white;
+  height: 2px;
+  width: 25%;
+  display: block;
+ 
+}
+/* .social{
+  font-size: 19px;
+  grid-row: 4;
+  grid-column: 1;
+  color:white;
+ 
+  width: 10px;
+}
+.form-select{
+  font-size: 10px;
+  width: 10%;
+}
+a{
+  color:white;
+} */
+
+/* .menu_dynamique {
+   display: grid;
+  grid-column: 1/2;
+  grid-row: 1/4;
+  grid-template-columns: 40px 1fr 40px;
+  grid-template-rows: 40px 1fr 40px;
+   align-self: center; 
+  /* justify-items: center;  */
+  /* background: #7f9fff; */
+  /* width: min-content;
+  font-size: 30%;
+} */ 
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 58%;
+  background-color: gray;
+  overflow: auto;
+  grid-row: 1;
+  grid-column: 1/2;
+  height:40px;
+  margin-left: 2em;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: black
+}
+
+.active {
+  background-color: green;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
